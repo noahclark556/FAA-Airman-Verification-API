@@ -16,7 +16,7 @@
 
 This API allows the caller to verify a pilot's credentials via the FAA's public fixed length pilot database. This API does not use the pilots certificate number, but rather the pilots first name, middle name, last name. It will return a list of pilots that match the given name as well as their address and certificates, which you can then match their provided information or id.
 
-I originally wrote this API for use within the Cloud Capture mobile app so that myself and the other developers could quickly verify a pilot's credentials. It worked very well and quickly. We needed something quick, so I had previously written this API in PHP and hosted it on my web server, but it was slow and definitely oldschool. So I decided to rewrite it in JavaScript/TypeScript and host it on Google Cloud.
+I originally wrote this API for use within the Cloud Capture mobile app so that myself and the other developers could quickly verify a pilot's credentials, this worked very well and quickly. I had previously written this API in PHP and hosted it on my web server, but it was slow and definitely oldschool. So I decided to rewrite it in JavaScript/TypeScript and host it on Google Cloud.
 
 Please note, not all pilots opt in to make their information public, so this API may not return any results for some pilots. It is recommended to use the FAA's online airman inquiry portal for more accurate results, but this API is very fast and works well for quick verification if implemented correctly.
 
